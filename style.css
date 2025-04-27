@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header section */
+  .header {
+    background-color: #003DA5;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-weight: 200;
+    margin-top: 0.5rem;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section h2 {
+    color: #003DA5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section p {
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #003DA5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+  
