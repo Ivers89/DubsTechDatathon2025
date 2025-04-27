@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seattle Service Requests Analysis</title>
-  <link href="styles.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;1000&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,30 +16,157 @@
 
   <section class="section">
     <h2>Project Overview</h2>
-    <p>This project explores customer service request data collected by the City of Seattle. Using data visualizations, we reveal trends across time, neighborhoods, service types, and departments, while creating a metric to help prioritize neighborhood support.</p>
+    <p>This project explores customer service request data collected by the City of Seattle. Using data visualizations, we reveal trends across time, neighborhoods, service types, and departments to figure out what issues and areas need the most attention.</p>
   </section>
 
   <section class="section">
-    <h2>Key Questions</h2>
-    <ul>
-      <li>What are the trends by month, quarter, day of week, hour, and year?</li>
-      <li>Which neighborhoods and departments have the highest service requests?</li>
-      <li>What service types are growing or declining?</li>
-      <li>How can neighborhoods be ranked based on service performance?</li>
-    </ul>
+    <h2>Service Request Trends and Analysis</h2>
+    <p>Explore trends by service request type and time period. Below is an interactive dashboard that visualizes the request count by type over different time periods. You can filter the data by selecting a time period and view how different types of service requests trend over time.</p>
+  
+    <!-- Tableau Embed -->
+    <div class='tableauPlaceholder' id='viz1745779890578' style='position: relative; width: 100%; overflow: hidden;'>
+        <noscript>
+          <a href='#'>
+            <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Bo/Book1_17457060749470/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:block; width: 100%;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Book1_17457060749470/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17457060749470/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+      
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1745779890578');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        var vizWidth = divElement.offsetWidth;
+        if (vizWidth > 800) {
+          vizElement.style.height = (vizWidth * 0.5625) + 'px'; // Aspect ratio 16:9 for large screens
+        } else if (vizWidth > 500) {
+          vizElement.style.height = (vizWidth * 0.75) + 'px'; // Slightly smaller height for medium screens
+        } else {
+          vizElement.style.height = '500px'; // Fixed height for small screens to avoid overflow
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
   </section>
 
   <section class="section">
-    <h2>Visualizations</h2>
-    <p>Explore the interactive dashboards below showing request trends and neighborhood rankings.</p>
-    <!-- Tableau/Power BI embed goes here -->
+    <h2>Service Requests By Neighborhood</h2>
+    <p>Explore the interactive map below to visualize service request distributions across neighborhoods, including trends and neighborhood rankings.</p>
+
+    <div class='tableauPlaceholder' id='viz1745780374780' style='position: relative; width: 100%; overflow: hidden;'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https://public.tableau.com/static/images/9D/9DGB9W462/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:block; width: 100%; height: 800px;'> <!-- Increased height here -->
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='path' value='shared/9DGB9W462' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/9D/9DGB9W462/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1745780374780');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+          vizElement.style.minWidth = '420px';
+          vizElement.style.maxWidth = '100%';
+          vizElement.style.minHeight = '610px';
+          vizElement.style.maxHeight = '900px';  
+        } else if (divElement.offsetWidth > 500) {
+          vizElement.style.minWidth = '420px';
+          vizElement.style.maxWidth = '100%';
+          vizElement.style.minHeight = '610px';
+          vizElement.style.maxHeight = '900px'; 
+        } else {
+          vizElement.style.width = '100%';
+          vizElement.style.minHeight = '750px';
+          vizElement.style.maxHeight = '1000px'; 
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    
   </section>
 
   <section class="section">
     <h2>Neighborhood Metric</h2>
     <p>We developed a custom ranking formula to assess the performance of each neighborhood based on request volume, request types, and changes over time. Neighborhoods are prioritized for government attention and resources accordingly.</p>
+
+    <div class='tableauPlaceholder' id='viz1745782259242' style='position: relative; width: 100%; overflow: hidden;'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https://public.tableau.com/static/images/Bo/Book1_17457060749470/Dashboard3/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:block; width: 100%; height: 800px;'> <!-- Increased height here -->
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='name' value='Book1_17457060749470/Dashboard3' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17457060749470/Dashboard3/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+      
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1745782259242');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+          vizElement.style.minWidth = '420px';
+          vizElement.style.maxWidth = '100%';
+          vizElement.style.minHeight = '610px';
+          vizElement.style.maxHeight = '900px';  
+        } else if (divElement.offsetWidth > 500) {
+          vizElement.style.minWidth = '420px';
+          vizElement.style.maxWidth = '100%';
+          vizElement.style.minHeight = '610px';
+          vizElement.style.maxHeight = '900px'; 
+        } else {
+          vizElement.style.width = '100%';
+          vizElement.style.minHeight = '750px';
+          vizElement.style.maxHeight = '1000px'; 
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+
   </section>
 
-  <footer class="footer">
-    <p>© 2025 Seattle Data Analysis Team</p>
-  </footer>
+</body>
+</html>
